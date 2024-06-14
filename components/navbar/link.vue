@@ -16,7 +16,7 @@ function gotoRoute() {
 </script>
 
 <template>
-    <li class="text-Text cursor-pointer select-none" @click="gotoRoute">
+    <li class="text-Text dark:text-TextDark cursor-pointer select-none w-full h-full px-5 py-5 transition-colors rounded-md hover:bg-Accent dark:hover:bg-AccentDark hover:text-Background dark:hover:text-BackgroundDark duration-200 ease-linear hover:shadow-md hover:shadow-Secondary/70" @click="gotoRoute">
         {{ text }}
     </li>
 </template>

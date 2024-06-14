@@ -4,7 +4,7 @@
 
 <template>
     <div class="font-textFont">
-        <BlankSection class="py-64 px-20">
+        <BlankSection class="pb-64 pt-40 px-20">
             <Introduction/>
         </BlankSection>
 

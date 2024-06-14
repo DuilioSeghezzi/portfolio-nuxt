@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    const esperienza = ref();
+    const esperienza = ref("Paragrafo di spiegazione sul perché è bello C++");
     function displaycpp(){
         esperienza.value="Paragrafo di spiegazione sul perché è bello C++";
     }
@@ -13,12 +13,12 @@
 
 <template>
     <div class="flex flex-row gap-10 w-full h-fit justify-center py-16">
-        <BlankCard @click="displaycpp"  class="py-20 px-10 aspect-auto w-fit h-fit shadow-none transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-Accent/50 cursor-pointer"><img src="@/assets/images/logocpp.svg" class="w-36 h-36" ></BlankCard>
+        <BlankCard @click="displaycpp"  class="py-20 px-10 aspect-auto w-fit h-fit shadow-none transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-Accent/50 dark:hover:shadow-AccentDark/50 cursor-pointer"><img src="@/assets/images/logocpp.svg" class="w-36 h-36" ></BlankCard>
         <BlankCard @click="displayjava" class="py-20 px-10 aspect-auto w-fit h-fit shadow-none transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-Accent/50 cursor-pointer"><img src="@/assets/images/logojava.svg" class="w-36 h-36" ></BlankCard>
-        <BlankCard @click="displaynuxt" class="py-20 px-10 aspect-auto w-fit h-fit shadow-none transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-Accent/50 cursor-pointer"><img src="@/assets/images/logocpp.svg" class="w-36 h-36" ></BlankCard>
+        <BlankCard @click="displaynuxt" class="py-20 px-10 aspect-auto w-fit h-fit shadow-none transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-xl hover:shadow-Accent/50 cursor-pointer"><img src="@/assets/images/logonuxt.png" class="w-36 h-36" ></BlankCard>
     </div>
-    <Transition name="slide-fade" mode="out-in">
-        <div class="text-Text text-2xl px-20 text-center pb-48" :key="esperienza">
+    <Transition name="slide-fade" mode="out-in" appear>
+        <div class="text-Text dark:text-TextDark text-2xl px-20 text-center pb-48" :key="esperienza">
             {{ esperienza }}
         </div>
     </Transition>   

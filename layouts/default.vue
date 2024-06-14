@@ -3,11 +3,10 @@
 </script>
 
 <template>
-    <div class="w-screen h-screen flex flex-col font-textFont">
+    <div class="w-screen h-screen flex flex-col font-textFont bg-Background dark:bg-BackgroundDark">
         <Navbar/>
         <div class="w-full h-full overflow-auto flex-1">
             <slot />
-            <hr class="shadow-md shadow-Text">
             <Footer/>
         </div>
     </div>

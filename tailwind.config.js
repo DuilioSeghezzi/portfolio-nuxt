@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [],
   theme: {
     extend: {
@@ -14,7 +15,13 @@ export default {
         Text:'#081821',
         Accent:'#BB6CDA',
         Primary:'#49A7D0',
-        Secondary:'#AB8DE2'
+        Secondary:'#AB8DE2',
+
+        BackgroundDark:'#020708',
+        TextDark:'#DFEFF7',
+        AccentDark:'#742593',
+        PrimaryDark:'#2F8EB6',
+        SecondaryDark:'#3B1D72'
       },
     },
   },
