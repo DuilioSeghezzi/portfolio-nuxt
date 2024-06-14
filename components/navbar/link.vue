@@ -16,7 +16,7 @@ function gotoRoute() {
 </script>
 
 <template>
-    <li class="text-white cursor-wait select-none" @click="gotoRoute">
+    <li class="text-Text cursor-pointer select-none" @click="gotoRoute">
         {{ text }}
     </li>
 </template>
