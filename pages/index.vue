@@ -3,17 +3,11 @@
 </script>
 
 <template>
-    <div class="font-textFont">
-        <BlankSection class="pb-64 pt-40 px-20">
-            <Introduction/>
-        </BlankSection>
+    <div class="font-textFont px-20">
+        <Introduction id="home" class="mt-[25vh]"/>
 
-        <BlankSection :title="'About'" class="px-20 py-24 text-center gap-20 justify-around">
-            <About/>
-        </BlankSection>
+        <About id="about" class="my-64"/>
 
-        <BlankSection :title="'Experiences'">
-            <Experiences/>
-        </BlankSection>
+        <Experiences id="experience" />
     </div>
 </template>
