@@ -1,10 +1,13 @@
 <script setup lang="ts">
-const isDark = ref(false as boolean);
+import { useDarkModeStore } from '~/store/darkMode';
+
+const store = useDarkModeStore();
 </script>
 
 <template>
-    <div class="h-screen w-screen font-textFont bg-Background dark:bg-BackgroundDark pt-4" :class="{dark: isDark}">
-        <Navbar @on-dark-mode-toggle="(newValue: boolean) => {isDark=newValue}"/>
+    <div class="h-screen w-screen font-textFont bg-Background dark:bg-BackgroundDark pt-4"
+        :class="{ dark: store.darkModeBool }">
+        <Navbar />
         <slot />
         <Footer />
     </div>

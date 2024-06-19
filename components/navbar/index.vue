@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const emit = defineEmits(["onDarkModeToggle"]);
 </script>
 
 <template>
@@ -7,9 +6,8 @@ const emit = defineEmits(["onDarkModeToggle"]);
         <div class="text-Accent dark:text-AccentDark font-barcode text-3xl md:text-6xl ml-1">DuilioSeghezzi</div>
         <NavbarMenu />
 
-        <DarkModeButton @on-dark-mode-toggle="(newValue: boolean) => emit('onDarkModeToggle', newValue)"
-            class="my-5 mx-5 md:ml-28" />
-        <MobileMenu/>
+        <DarkModeButton class="my-5 mx-5 md:ml-28" />
+        <MobileMenu />
     </div>
 
 </template>

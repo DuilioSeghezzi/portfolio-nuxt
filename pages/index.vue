@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { useDarkModeStore } from '~/store/darkMode';
+
 const isDark = ref(false as boolean);
+
+useDarkModeStore();
+
 </script>
 
 <template>
