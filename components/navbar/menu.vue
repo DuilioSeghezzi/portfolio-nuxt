@@ -4,7 +4,7 @@ const navbarLinks = ["home", "about", "experience"];
 
 <template>
     <nav>
-        <ul class="flex flex-row items-center gap-5 h-full flex-wrap">
+        <ul class="md:flex flex-row items-center gap-5 h-full justify-between hidden ">
             <NavbarLink v-for="link in navbarLinks" :text="link" />
         </ul>
     </nav>

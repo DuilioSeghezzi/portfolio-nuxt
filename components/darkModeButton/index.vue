@@ -17,7 +17,7 @@ function darkModeToggle() {
 
 <template>
     <div
-      class="rounded-md bg-BackgroundDark text-TextDark dark:bg-Background dark:text-Text cursor-pointer px-10 py-5 text-center"
+      class="rounded-md bg-BackgroundDark/90 text-TextDark dark:bg-Background dark:text-Text cursor-pointer text-center px-4 py-4 md:px-8 md:py-4 text-sm md:text-lg"
       @click="darkModeToggle">
       {{ darkState }}
     </div>
