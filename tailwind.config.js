@@ -13,15 +13,16 @@ export default {
       colors:{
         Background:'#f7fcfd',
         Text:'#081821',
-        Accent:'#BB6CDA',
-        Primary:'#49A7D0',
-        Secondary:'#AB8DE2',
+        Accent:'#742593',
+        Primary:'#2F8EB6',
+        Secondary:'#3B1D72',
 
-        BackgroundDark:'#020708',
+        BackgroundDark:'#0d0614',
+        // 140921 020708 0d0614
         TextDark:'#DFEFF7',
-        AccentDark:'#742593',
-        PrimaryDark:'#2F8EB6',
-        SecondaryDark:'#3B1D72'
+        AccentDark:'#BB6CDA',
+        PrimaryDark:'#49A7D0',
+        SecondaryDark:'#AB8DE2'
       },
     },
   },

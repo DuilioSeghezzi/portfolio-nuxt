@@ -16,9 +16,9 @@ function darkModeToggle() {
 </script>
 
 <template>
-  <div class="px-7 py-5 rounded-md bg-BackgroundDark text-TextDark dark:bg-Background dark:text-Text cursor-pointer"
-  :class="{dark:darkMode}"
-  @click="darkModeToggle" >
-    {{ darkState }}
-  </div>
+    <div
+      class="rounded-md bg-BackgroundDark text-TextDark dark:bg-Background dark:text-Text cursor-pointer px-10 py-5 text-center"
+      @click="darkModeToggle">
+      {{ darkState }}
+    </div>
 </template>

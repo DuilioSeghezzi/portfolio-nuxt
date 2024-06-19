@@ -4,12 +4,12 @@
 
 <template>
     <div>
-        <h3 class="font-lato text-5xl font-title2 tracking-wider mb-5 text-center text-Accent/80">About</h3>
-        <div class="flex flex-row items-center gap-5">
+        <h3 class="font-lato text-xl md:text-3xl font-title2 tracking-wider mb-5 text-center text-Accent dark:text-AccentDark">About</h3>
+        <div class="flex flex-col md:flex-row items-center gap-5">
 
-            <BlankCard class="w-1/2 h-1/2 aspect-square items-center flex flex-col justify-center">
+            <div class="w-1/2 h-1/2 aspect-square flex flex-col justify-center shadow-lg shadow-Primary dark:shadow-PrimaryDark border border-neutral-400 dark:border-PrimaryDark rounded-md overflow-hidden items-center ">
                 <img src="@/assets/images/logocpp.svg" class="h-fit w-fit p-5" />
-            </BlankCard>
+            </div>
             <div class="text-left text-Text dark:text-TextDark text-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Similique veritatis nam tempore officia, et delectus molestiae cumque.
