@@ -1,15 +1,14 @@
-FROM node:18.20.3 
+FROM node:latest
 
-RUN mkdir -p /usr/src/nuxt-portfolio
-WORKDIR /usr/src/nuxt-portfolio
+WORKDIR /app
 
-COPY . /usr/src/nuxt-portfolio/
+COPY package*.json ./
+
 RUN npm install
-RUN npm run build
+
+COPY . .
 
 EXPOSE 3000
 
-ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=3000
-
-CMD ["npm", "start"]
+RUN npm run build
+CMD [ "npm", "run", "start" ]

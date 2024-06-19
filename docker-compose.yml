@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  nuxt-portfolio:
+    build: .
+    container_name: nuxt-portfolio
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+  
